@@ -130,8 +130,8 @@ if (!isset($_SESSION['username'])) {
   </head>
   <body>
   <div class="topnav">
-Github : <a href="https://github.com/mahesafy/PEMWEBUASSem1/">https://github.com/mahesafy/PEMWEBUASSem1/</a>
-</div>
+<a href="https://github.com/mahesafy/PEMWEBUASSem1/">https://github.com/mahesafy/PEMWEBUASSem1/</a>
+</div><br>
     <span class="profile"> <?=$_SESSION['username']?> | Update Terakhir : <?=getlastUpdate();?> WIB  <a href="logout.php"><button class="logout">Logout</button></a></span>
     <span class="action">
       
