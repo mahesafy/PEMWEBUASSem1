@@ -106,7 +106,7 @@ button[type="submit"] {
 </head>
 <body>
     <div class="topnav">
-Github : <a href="https://github.com/mahesafy/PEMWEBUASSem1/">https://github.com/mahesafy/PEMWEBUASSem1/</a>
+<a href="https://github.com/mahesafy/PEMWEBUASSem1/">https://github.com/mahesafy/PEMWEBUASSem1/</a>
 </div>
     <br><br>
     
