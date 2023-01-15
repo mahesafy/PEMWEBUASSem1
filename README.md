@@ -25,8 +25,8 @@ Source Code UAS Pemrograman Web Dikumpulkan Tanggal 17 January 2023
 - Setelah Menjalankan server buka phpmyadmin, buat database baru dengan nama ```uas```
 - Import file [laptops.sql](https://github.com/mahesafy/PEMWEBUASSem1/blob/main/laptops.sql) ke database ```uas```
 - Jangan lupa untuk mengatur file [koneksi.php](https://github.com/mahesafy/PEMWEBUASSem1/blob/main/koneksi.php) untuk menyesuaikan dengan identitas database masing masing
-- Untuk mendapatkan site key + secrey key untuk recaptcha di [login.php](https://github.com/mahesafy/PEMWEBUASSem1/blob/main/login.php) silahkan buka web [RECAPTCHA](https://www.google.com/recaptcha/about/)
-- Buka Localhost di browser kalian masukan username dan password default berikut :
+- Untuk mendapatkan site key + secret key untuk recaptcha di [login.php](https://github.com/mahesafy/PEMWEBUASSem1/blob/main/login.php) silahkan buka web [RECAPTCHA](https://www.google.com/recaptcha/about/)
+- Buka localhost di browser masukan username dan password default berikut :
 
 | Username             | Password                                                                |
 | ----------------- | ------------------------------------------------------------------ |
