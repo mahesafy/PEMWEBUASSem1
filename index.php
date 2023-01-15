@@ -114,9 +114,24 @@ if (!isset($_SESSION['username'])) {
       .action {
         float: right;
       }
+      .topnav {
+        overflow: hidden;
+        background-color: orange;
+      }
+
+      .topnav {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 11px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
     </style>
   </head>
   <body>
+  <div class="topnav">
+Github : <a href="https://github.com/mahesafy/PEMWEBUASSem1/">https://github.com/mahesafy/PEMWEBUASSem1/</a>
+</div>
     <span class="profile"> <?=$_SESSION['username']?> | Update Terakhir : <?=getlastUpdate();?> WIB  <a href="logout.php"><button class="logout">Logout</button></a></span>
     <span class="action">
       
