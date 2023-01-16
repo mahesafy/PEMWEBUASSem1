@@ -62,7 +62,8 @@ include 'koneksi.php';
                       <form action="save.php" method="POST" enctype="multipart/form-data">
                         <h1>TAMBAH DATA</h1>
                         <label>Gambar</label>
-                        <input type="file" name="file">
+                        <img height="150" width="230" id="blah" src="#" ><br>
+                        <input type="file" name="file" id="imgInp">
                         <label>Brand</label>
                         <input type="text" name="brand" placeholder="Masukkan Brand" class="form-control">
                         <label>Nama Model</label>
@@ -87,5 +88,13 @@ include 'koneksi.php';
             </div>
           </div>
       </div>
+      <script>
+imgInp.onchange = evt => {
+  const [file] = imgInp.files
+  if (file) {
+    blah.src = URL.createObjectURL(file)
+  }
+}
+</script>
   </body>
 </html>
