@@ -87,7 +87,7 @@ include 'koneksi.php';
                 <input value="<?=$graphics?>" type="text" name="graphics" placeholder="Masukkan Graphics" class="form-control"><label>Processor</label>
                 <input value="<?=$processor?>" type="text" name="processor" placeholder="Masukkan processor" class="form-control"><label>Harga</label>
                 <input value="<?=$price?>" type="text" name="price" placeholder="Masukkan Harga" ><label>Tanggal Masuk</label>
-                <input value="<?=$date?>" type="text" name="date" placeholder="Masukkan Tanggal contoh 2023-01-19">
+                <input value="<?=$date?>" type="date" name="date" placeholder="Masukkan Tanggal contoh 2023-01-19">
                 <button type="submit" class="btn btn-success">SIMPAN</button>
                 <a href="index.php" class="btn btn-warning">Kembali</a>
               </form>

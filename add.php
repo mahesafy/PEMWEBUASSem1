@@ -76,7 +76,7 @@ include 'koneksi.php';
                         <label>Harga</label>
                         <input  type="text" name="price" placeholder="Masukkan Harga" class="form-control datepicker">
                         <label>Tanggal Masuk</label>
-                        <input  type="text" name="date" placeholder="Masukkan Tanggal contoh 2023-01-19" class="form-control datepicker">
+                        <input  type="date" name="date" placeholder="Masukkan Tanggal contoh 2023-01-19" class="form-control datepicker">
                         <button type="submit" class="btn btn-success">SIMPAN</button>
                         <a href="index.php" class="btn btn-warning" >Kembali</a>
                       </form>
