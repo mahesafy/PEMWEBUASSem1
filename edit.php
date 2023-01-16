@@ -102,6 +102,11 @@ include 'koneksi.php';
       </div>
     </div>
 <script>
+const img = document.getElementById("blah")
+img.addEventListener("error", function(event) {
+  event.target.src = "https://lyon.palmaresdudroit.fr/images/joomlart/demo/default.jpg"
+  event.onerror = null
+})
 imgInp.onchange = evt => {
   const [file] = imgInp.files
   if (file) {
