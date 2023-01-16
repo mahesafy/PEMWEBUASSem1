@@ -141,7 +141,8 @@ if (!isset($_SESSION['username'])) {
     <thead>
         <tr>
         <th width="1%">No</th>
-            <th>Brand</th>
+        <th>Gambar</th>    
+        <th>Brand</th>
             <th>Model</th>
             <th>Memory</th>
             <th>Storage</th> 

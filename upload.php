@@ -1,24 +1,13 @@
 <?php
-session_start();
-if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
-}
-//include koneksi file penting
-include('koneksi.php');
-include('function.php');
-//get data dari form
-$brand = mysqli_escape_string($conn, $_POST['brand']); 
-$model = mysqli_escape_string($conn, $_POST['model']); 
-$memory = mysqli_escape_string($conn, $_POST['memory']); 
-$storage = mysqli_escape_string($conn, $_POST['storage']); 
-$graphics = mysqli_escape_string($conn, $_POST['graphics']); 
-$processor = mysqli_escape_string($conn, $_POST['processor']); 
-$price = mysqli_escape_string($conn, $_POST['price']); 
-$date = mysqli_escape_string($conn, $_POST['date']);
+// Include the database configuration file
+include 'koneksi.php';
+$statusMsg = '';
+if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
+    // Allow certain file formats
     $fileName   = uniqid() . "-" . time(); // 5dab1961e93a7-1571494241
     $extension  = pathinfo( $_FILES["file"]["name"], PATHINFO_EXTENSION ); // jpg
     $basename   = $fileName . "." . $extension; // 5dab1961e93a7_1571494241.jpg
-    $image = $basename;
+
     $source       = $_FILES["file"]["tmp_name"];
     $destination  = "uploads/{$basename}";
     $allowTypes = array('jpg','png','jpeg','gif','pdf');
@@ -38,13 +27,15 @@ $date = mysqli_escape_string($conn, $_POST['date']);
     }else{
         $statusMsg = 'Sorry, only JPG, JPEG, PNG, GIF, & PDF files are allowed to upload.';
     }
-$query = "INSERT INTO laptops (brand, model, memory, storage, graphics, processor, price, date, image) VALUES ('$brand', '$model', '$memory', '$storage', '$graphics', '$processor', '$price', '$date', '$image')";
-if($conn->query($query)) {
-    lastupdate();
-    header("location: index.php");
-} else {
-    echo "Data Gagal Disimpan!";
-
+}else{
+    $statusMsg = 'Please select a file to upload.';
 }
 
+// Display status message
+echo $statusMsg;
 ?>
+<form action="" method="post" enctype="multipart/form-data">
+    Select Image File to Upload:
+    <input type="file" name="file">
+    <input type="submit" name="submit" value="Upload">
+</form>

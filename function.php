@@ -25,6 +25,7 @@ function table($data, $admin, $no){
     return "
     <tr>
     <td>".$no++."</td>
+    <td><img src='uploads/".htmlspecialchars($data['image'])."' height='200' width='230'</td>
     <td>".htmlspecialchars($data['brand'])."</td>
     <td>".htmlspecialchars($data['model'])."</td>
     <td>".htmlspecialchars($data['memory'])." GB</td>

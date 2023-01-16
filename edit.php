@@ -16,6 +16,7 @@ include 'koneksi.php';
             $processor = mysqli_escape_string($conn, $data['processor']); 
             $price = mysqli_escape_string($conn, $data['price']); 
             $date = mysqli_escape_string($conn, $data['date']);
+            $image = mysqli_escape_string($conn, $data['image']);
         }elseif(!$data){
           header("Location: index.php");
         }
@@ -78,8 +79,12 @@ include 'koneksi.php';
         <div class="col-md-8 offset-md-2">
           <div class="card">
             <div class="card-body">
-              <form action="actionedit.php" method="POST">
-                <h1>EDIT DATA</h1><input value="<?=$id?>" type="text" name="id" hidden><label>Brand</label>
+              <form action="actionedit.php" method="POST" enctype="multipart/form-data">
+                <h1>EDIT DATA</h1><input value="<?=$id?>" type="text" name="id" hidden>
+                <label>Gambar</label>
+                <img src="uploads/<?=$image?>" height="200" width="230"><br>
+                <input type="file" name="file">
+                <label>Brand</label>
                 <input value="<?=$brand?>" type="text" name="brand" placeholder="Masukkan Brand" class="form-control"><label>Nama Model</label>
                 <input value="<?=$model?>" type="text" name="model" placeholder="Masukkan Nama Model" class="form-control"><label>Memory</label>
                 <input value="<?=$memory?>" type="number" name="memory" id="Memory" placeholder="Masukkan Memory" class="form-control"><label>Storage</label>

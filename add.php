@@ -59,8 +59,10 @@ include 'koneksi.php';
             <div class="col-md-8 offset-md-2">
                 <div class="card">
                   <div class="card-body">
-                      <form action="save.php" method="POST">
+                      <form action="save.php" method="POST" enctype="multipart/form-data">
                         <h1>TAMBAH DATA</h1>
+                        <label>Gambar</label>
+                        <input type="file" name="file">
                         <label>Brand</label>
                         <input type="text" name="brand" placeholder="Masukkan Brand" class="form-control">
                         <label>Nama Model</label>
