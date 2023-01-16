@@ -10,7 +10,7 @@ Source Code UAS Pemrograman Web Dikumpulkan Tanggal 17 January 2023
 
 
 ## Detail Tugas
-
+ - Membuat Aplikasi Pendataan Barang (Laptop)
  - Bahasa Pemrograman [PHP](https://www.php.net/)
  - Database [MYSQL](https://www.mysql.com/)
  - Source Data Laptop dari [versus.com](https://versus.com/id/laptop)
