@@ -82,7 +82,7 @@ include 'koneksi.php';
               <form action="actionedit.php" method="POST" enctype="multipart/form-data">
                 <h1>EDIT DATA</h1><input value="<?=$id?>" type="text" name="id" hidden>
                 <label>Gambar</label>
-                <img src="uploads/<?=$image?>" height="200" width="230"><br>
+                <img src="uploads/<?=$image?>" height="150" width="230"><br>
                 <input type="file" name="file">
                 <label>Brand</label>
                 <input value="<?=$brand?>" type="text" name="brand" placeholder="Masukkan Brand" class="form-control"><label>Nama Model</label>
